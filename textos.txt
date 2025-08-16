@@ -1,0 +1,132 @@
+--- Título da Página ---
+Noduspace - A nova forma de criar páginas profissionais
+
+--- Seção 1: Hero ---
+[Botão Header] Entre Em Contato
+[Texto Principal] Se tá na web, tá bombando.
+[Botão Principal] Veja como funciona
+
+--- Seção 2: Clean & Minimalista ---
+[Header - Título] sua empresa
+[Header - Navegação] Projetos
+[Header - Navegação] Serviços
+[Header - Navegação] Sobre
+[Header - Navegação] Páginas
+[Título da Seção] Clean & Minimalista
+[Parágrafo] Esse é apenas um exemplo do que podemos fazer por você aqui na Noduspace. Empresas que optam por páginas clean e minimalistas geralmente têm alguns objetivos e valores em comum: elas querem transmitir sofisticação, confiança, foco no conteúdo e uma experiência fluida para o usuário. Esse estilo costuma ser escolhido por marcas que sabem o que querem comunicar com clareza e maturidade, e que preferem o impacto da simplicidade.
+[Card 1 - Título] Transmite calma em um mundo poluído
+[Card 1 - Parágrafo] Na avalanche visual da internet, uma página minimalista se destaca justamente por ser tranquila.
+[Card 2 - Título] Gosta do que vê?
+[Card 2 - Botão] Entre em contato
+[Card 3 - Título] É associada a marcas de alto valor
+[Card 3 - Parágrafo] Empresas de luxo, tecnologia de ponta ou serviços premium costumam adotar o estilo clean. Por quê? Porque isso sinaliza sofisticação, segurança e exclusividade.
+
+--- Seção 3: Dark Tech ---
+[Tag] Dark Tech
+[Título] Digital. Intenso. Inesquecível.
+[Parágrafo] Ideal pra quem quer se destacar com estilo, presença e presença digital de verdade.
+[Tag Coluna Esquerda] Forte e Vibrante
+[Sub-título] Essa página não é só visual. É experiência.
+[Parágrafo Coluna Esquerda] Pensada pra quem quer impressionar logo no primeiro clique, com um visual inspirado no universo tech, neon, vaporwave e digital premium. Ideal pra quem vende inovação, trabalha com tecnologia ou simplesmente não aceita ser ignorado online.
+[Botão Coluna Esquerda] Entre em contato
+
+--- Seção 4: Colorido Criativo ---
+[Título] Colorido & Criativo
+[Parágrafo] Cores vibrantes, formas orgânicas e tipografia divertida. Ideal para designers, artistas e criadores de conteúdo.
+[Botão] Entre em contato
+[Card 1 - Título] Explosão Visual Inteligente
+[Card 1 - Parágrafo] Nada aqui é colorido por acaso. Cada cor tem um propósito, cada elemento foi pensado pra atrair, guiar e encantar quem navega. É design com intenção e um toque de ousadia.
+[Card 2 - Título] Layout Fora da Caixa
+[Card 2 - Parágrafo] Chega de quadradinho engessado. Esse layout brinca com formas, movimentos e espaços em branco do jeito certo. Diferente o suficiente pra impressionar, organizado o bastante pra converter.
+[Card 3 - Título] Comunicação que Respira
+[Card 3 - Parágrafo] Mensagens leves, diretas e com personalidade. Essa página não grita — ela conversa, se conecta e faz sua marca ser lembrada de forma natural e marcante.
+
+--- Seção 5: Corporativo Elegante ---
+[Header Coluna Esquerda] SUA EMPRESA
+[Parágrafo Intro] Olá, meu nome é...
+[Título] PERFEITO Para apresentar VOCÊ E SEU PROJETO
+[Parágrafo Principal] Seja no digital ou no presencial, a entrega é sempre pautada por confiança, clareza e resultado. O objetivo é simples: fazer com que cada cliente se sinta seguro e satisfeito em cada etapa do processo.
+[Botão Principal] Entre em Contato
+[Header Coluna Direita - Botão] MENU
+[Stat 1 - Número] 15+
+[Stat 1 - Texto] Anos de experiência
+[Stat 2 - Número] 310+
+[Stat 2 - Texto] Projetos entregues
+[Stat 3 - Número] ≈99%
+[Stat 3 - Texto] Satisfação de cliente
+[Stat 4 - Número] 50
+[Stat 4 - Texto] Clientes em todo o mundo
+[Footer - Card 1 Título] Precisão no que importa
+[Footer - Card 1 Texto] Foco total nas necessidades reais do cliente, sem enrolação.
+[Footer - Card 2 Título] Estratégia com visão
+[Footer - Card 2 Texto] Cada solução pensada com lógica, clareza e propósito.
+[Footer - Card 3 Título] Compromisso com prazos
+[Footer - Card 3 Texto] Pontualidade não é diferencial. É obrigação cumprida, sempre.
+[Footer - Card 4 Título] Postura profissional
+[Footer - Card 4 Texto] Atendimento direto, educado e transparente em todas as etapas.
+
+--- Seção 6: Produto/App Mobile ---
+[Header - Título] Sua Empresa
+[Header - Navegação] Serviços
+[Header - Navegação] Como funciona
+[Header - Navegação] Sobre nós
+[Header - Navegação] Agentes
+[Header - Navegação] Projetos
+[Header - Navegação] Afiliados
+[Título Principal] Ou que tal uma página para apresentar seu novo app?
+[Parágrafo] Mostre as funções, os diferenciais e leve o usuário direto pro download.
+[Botão] Entre em contato
+[Info Box - Card 1 Título] Interface que conquista
+[Info Box - Card 1 Texto] Seu app merece destaque com um layout que valoriza cada detalhe da interface e entrega uma experiência visual de impacto.
+[Info Box - Card 2 Título] Foco total na conversão
+[Info Box - Card 2 Texto] Do visual ao call-to-action, tudo é pensado pra guiar o usuário até o download — rápido, claro e direto ao ponto.
+[Info Box - Card 3 Título] 5M+ Downloads 👏
+[Mockup Celular - Título] Olá, usuário! 👋
+[Mockup Celular - Card Título] Arrasar com uma nova página
+[Mockup Celular - Card Botão] Começar
+[Mockup Celular - Card Data] Jun 17
+[Mockup Celular - Item 1] Estudar para o concurso
+[Mockup Celular - Item 1 Porcentagem] 85%
+[Mockup Celular - Item 2] Arrumar o quarto
+[Mockup Celular - Item 2 Porcentagem] 72%
+[Mockup Celular - Item 3] Finalizar projeto
+[Mockup Celular - Item 3 Porcentagem] 60%
+[Floating Card 1 - Título] Curtiu esse estilo?
+[Floating Card 1 - Texto] Feita pra gerar desejo, engajamento e conversões — tudo no primeiro scroll.
+[Floating Card 2 - Título] Destaque Visual
+[Floating Card 2 - Tag] App Mobile
+[Floating Card 2 - Texto 1] Imagine essa página com seu app no centro.
+[Floating Card 2 - Texto 2] Seu produto, seu visual, sua pegada. Pronto pra impressionar.
+[Floating Card 2 - Texto 3] É assim que você conquista usuários desde o primeiro clique.
+
+--- Seção 7: Nova Seção ---
+[Header - Título] Sua empresa
+[Header - Navegação] Sobre Nós
+[Header - Navegação] Projetos
+[Header - Navegação] Parceiros
+[Header - Navegação] Serviços
+[Header - Botão] Entre em contato
+[Título Principal] Um estilo imersivo e dinâmico para seu negócio.
+[Card 1 - Título] Fluidez
+[Card 1 - Texto] Tudo aparece na hora certa: textos que deslizam, imagens que emergem com suavidade e transições que mantêm o usuário preso à navegação. Nada é estático — tudo responde ao seu ritmo.
+[Card 2 - Título] Movimento
+[Card 2 - Texto] Cada detalhe tem propósito. Os elementos se mexem, reagem e acompanham o olhar, criando uma experiência quase cinematográfica, onde o conteúdo se revela conforme o usuário explora.
+[Card 3 - Título] Envolvimento
+[Card 3 - Texto] Essa não é só uma página bonita — é uma página que conversa. Ela guia, provoca curiosidade e cria uma conexão real com quem está navegando. O usuário não só vê: ele sente.
+[Footer Card 1 - Título] Lorem Ipsum
+[Footer Card 1 - Texto] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+[Footer Card 1 - Botão] Saiba Mais
+[Footer Card 2 - Título] Dolor Sit
+[Footer Card 2 - Texto] Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+[Footer Card 2 - Botão] Saiba Mais
+[Footer Card 3 - Título] Amet Consectetur
+[Footer Card 3 - Texto] Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+[Footer Card 3 - Botão] Saiba Mais
+[Footer Card 4 - Título] Excepteur Sint
+[Footer Card 4 - Texto] Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+[Footer Card 4 - Botão] Saiba Mais
+
+--- Seção Final: CTA ---
+[Título] Vamos criar a sua página?
+[Parágrafo] Transforme sua visão em realidade com a Noduspace.
+[Botão] Entre em Contato

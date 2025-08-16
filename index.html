@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noduspace - A nova forma de criar páginas profissionais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+
+    <div class="scroll-container" id="scroll-container">
+        <!-- Hero Section -->
+        <section id="hero" class="scroll-section h-screen flex flex-col items-center justify-center text-center relative overflow-hidden p-8" style="background-color: #07060b;">
+            <img src="imagens/moon.png" alt="Moon background" class="moon-background">
+            <header class="absolute top-0 left-0 w-full flex items-center justify-between p-8 z-20">
+                <img src="imagens/logotipo_noduspace.png" alt="Noduspace Logo" class="h-10">
+                <div class="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-4">
+                    <div class="w-24 h-2 bg-gray-700 rounded-full"></div>
+                    <div class="w-24 h-2 bg-gray-700 rounded-full"></div>
+                    <div class="w-24 h-2 bg-gray-700 rounded-full"></div>
+                </div>
+                <a href="https://wa.me/5547996583052" class="text-white font-bold py-2 px-6 rounded-[50px] border-2 border-white transition-all duration-300 hover:bg-[#474878] hover:border-[#474878]">Entre Em Contato</a>
+            </header>
+            <canvas id="particle-canvas" class="absolute top-0 left-0 w-full h-full z-0"></canvas>
+            <div class="z-10 p-12 md:p-16 rounded-lg" style="background-color: transparent; border: none; min-height: 550px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img src="imagens/logotipo_noduspace.png" alt="Noduspace Logo" class="h-32 md:h-40 mx-auto mb-16" data-aos="zoom-in">
+                <p class="text-xl md:text-2xl mt-4" data-aos="zoom-in" data-aos-delay="200">Se tá na web, tá bombando.</p>
+                <a href="#clean-minimalist" class="mt-8 inline-block text-white font-bold py-3 px-8 rounded-[50px] border-2 border-white transition-all duration-300 hover:bg-[#474878] hover:border-[#474878] transform hover:scale-105" data-aos="zoom-in" data-aos-delay="400">Veja como funciona</a>
+            </div>
+        </section>
+
+        <!-- Seção 2: Clean & Minimalista (Arkitect+) -->
+        <section id="clean-minimalist" class="scroll-section h-screen text-white overflow-hidden" style="background-color: rgb(180, 205, 230);">
+            <div class="h-full flex flex-col">
+                <!-- Header -->
+                <header class="w-full flex items-center justify-between p-8 z-20" data-aos="zoom-in">
+                    <div class="text-2xl font-bold">sua empresa</div>
+                    <nav class="hidden md:flex items-center gap-8 text-sm">
+                        <a href="#" class="hover:text-gray-300">Projetos</a>
+                        <a href="#" class="hover:text-gray-300">Serviços</a>
+                        <a href="#" class="hover:text-gray-300">Sobre</a>
+                        <a href="#" class="flex items-center gap-1 hover:text-gray-300">Páginas <span>&#9662;</span></a>
+                    </nav>
+                    <div class="flex items-center gap-4">
+                        <div class="w-8 h-8 bg-white rounded-full"></div>
+                        <div class="w-8 h-8 bg-white rounded-full"></div>
+                        <div class="w-8 h-8 bg-white rounded-full"></div>
+                    </div>
+                </header>
+
+                <!-- Hero Content -->
+                <div class="flex-grow flex items-center">
+                    <div class="w-1/2 p-8 md:p-16">
+                        <h2 class="text-6xl md:text-8xl font-bold" data-aos="zoom-in-right">Minimalismo que comunica</h2>
+                        <p class="mt-4 text-white-300 max-w-xl" data-aos="zoom-in-right">
+                            Cada página que criamos transmite clareza, sofisticação e foco total no que realmente importa: sua mensagem. O design clean garante que seus clientes absorvam o conteúdo sem distrações, tornando sua marca memorável e confiável.
+                        </p>
+                    </div>
+                    <div class="w-1/2 h-full bg-contain bg-right bg-no-repeat" style="background-image: url('imagens/section2-image.png');" data-aos="zoom-in-up"></div>
+                </div>
+
+                <!-- Seção de Logos e Estatísticas -->
+                <div class="bg-white text-gray-800 p-8 md:p-16 rounded-t-3xl -mt-16 z-10">
+                    <div class="flex justify-around items-center mb-12">
+                        <img src="imagens/logoipsum-354.svg" alt="Logo 1" class="h-10 filter grayscale" data-aos="zoom-in-up" data-aos-delay="200">
+                        <img src="imagens/logoipsum-358.svg" alt="Logo 2" class="h-10 filter grayscale" data-aos="zoom-in-up" data-aos-delay="300">
+                        <img src="imagens/logoipsum-372.svg" alt="Logo 3" class="h-10 filter grayscale" data-aos="zoom-in-up" data-aos-delay="400">
+                        <img src="imagens/logoipsum-378.svg" alt="Logo 4" class="h-10 filter grayscale" data-aos="zoom-in-up" data-aos-delay="500">
+                        <img src="imagens/logoipsum-385.svg" alt="Logo 5" class="h-10 filter grayscale" data-aos="zoom-in-up" data-aos-delay="600">
+                        <img src="imagens/logoipsum-388.svg" alt="Logo 6" class="h-10 filter grayscale" data-aos="zoom-in-up" data-aos-delay="700">
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8 text-center" data-aos="zoom-in">
+                        <div class="bg-white p-8 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold">Tranquilidade em meio ao caos</h3>
+                            <p class="text-sm text-gray-400 mt-2">Enquanto a internet é cheia de ruídos, sua página minimalista se destaca pela serenidade e organização visual.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-lg">
+                            <h3 class="text-5xl font-bold">Quer esse impacto?</h3>
+                            <a href="https://wa.me/5547996583052" class="mt-8 inline-block text-black font-bold py-3 px-8 rounded-[50px] border-2 border-black transition-all duration-300 hover:bg-[#474878] hover:text-white hover:border-[#474878] transform hover:scale-105">Entre em contato</a>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold">Sofisticação que agrega valor</h3>
+                            <p class="text-sm text-gray-400 mt-2">Empresas de alto padrão, tecnologia e serviços premium escolhem layouts clean porque passam confiança, segurança e exclusividade aos clientes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Dark Tech -->
+        <section id="dark-tech" class="scroll-section h-screen flex flex-col items-center justify-center text-white relative overflow-hidden bg-black">
+            <!-- Background Glows and Gradients -->
+            <div class="absolute inset-0" style="background: radial-gradient(circle at center, rgba(100, 0, 200, 0.1) 0%, transparent 50%), linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(20, 0, 40, 0.8) 100%);"></div>
+            <div class="absolute inset-0" style="box-shadow: inset 0 0 100px rgba(100, 0, 200, 0.3);"></div>
+
+            <!-- Central Content Area -->
+            <div class="relative z-10 flex flex-col items-center text-center p-8 max-w-4xl mx-auto">
+                <!-- Light Lilac Glow -->
+                <div class="absolute inset-0 -m-4 rounded-full" style="background: radial-gradient(circle at center, rgba(200, 150, 255, 0.1) 0%, transparent 70%);"></div>
+
+                <!-- Features Tag -->
+                <span class="bg-purple-800 text-white text-xs font-bold px-4 py-1 rounded-full mb-8" style="box-shadow: 0 0 10px rgba(200, 150, 255, 0.5);" data-aos="zoom-in">Dark Tech</span>
+
+                <!-- Main Title -->
+                <h2 class="text-6xl md:text-7xl font-bold leading-tight mb-6" style="font-family: 'Poppins', sans-serif; text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);" data-aos="zoom-in">
+                    Digital, intenso.<br>E inesquecível.
+                </h2>
+
+                <!-- Explanatory Paragraph -->
+                <p class="text-lg text-gray-300 max-w-2xl mb-16" data-aos="zoom-in">
+                    Para quem quer dominar a presença digital com estilo, impacto e inovação.
+                </p>
+            </div>
+
+            <!-- Two-Column Layout -->
+            <div class="relative z-10 grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto px-8 pb-16">
+                <!-- Left Column: Text Content -->
+                <div class="text-left">
+                    <!-- Effortless Scheduling Tag -->
+                    <span class="bg-purple-700 text-white text-xs font-bold px-3 py-1 rounded-full mb-4" style="box-shadow: 0 0 8px rgba(200, 150, 255, 0.3);" data-aos="zoom-in">Forte & Vibrante</span>
+
+                    <!-- Sub-Title -->
+                    <h3 class="text-4xl font-bold leading-tight mb-6" data-aos="zoom-in">
+                        <span class="text-white">Experiência</span> <span class="text-purple-400" style="text-shadow: 0 0 10px rgba(200, 150, 255, 0.8);">que vai além</span> <span class="text-white">do visual.</span>
+                    </h3>
+
+                    <!-- Explanatory Paragraph -->
+                    <p class="text-gray-300 text-lg leading-relaxed" data-aos="zoom-in-up">
+                        Este estilo impressiona no primeiro clique. Inspirado em universos tech, neon e vaporwave, ele é perfeito para empresas que trabalham com tecnologia, inovação ou desejam se destacar de forma memorável.
+                    </p>
+                    <a href="https://wa.me/5547996583052" class="mt-8 inline-block text-white font-bold py-3 px-8 rounded-[50px] border-2 border-white transition-all duration-300 hover:bg-[#474878] hover:text-white hover:border-[#474878] transform hover:scale-105" data-aos="zoom-in-up">Entre em contato</a>
+                </div>
+
+                <!-- Right Column: Image Illustration -->
+                <div class="relative flex justify-center items-center">
+                    <!-- Neon Glow Border -->
+                    <div class="absolute inset-0 rounded-3xl" style="border: 3px solid transparent; background-image: linear-gradient(to bottom right, #8A2BE2, #DA70D6); background-origin: border-box; background-clip: content-box, border-box; box-shadow: 0 0 30px rgba(138, 43, 226, 0.8), inset 0 0 20px rgba(218, 112, 214, 0.5);" data-aos="zoom-in"></div>
+                    <!-- Image Placeholder -->
+                    <img src="imagens/section3-image.png" alt="Automated Scheduling Interface" class="relative z-10 rounded-2xl w-5/6 h-auto object-cover transform rotate-3" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); transform: rotate(3deg);" data-aos="flip-up">
+                    <!-- Note for user to replace image -->
+                    <!-- TODO: Replace this placeholder image with a detailed illustration of an automated scheduling interface as described in the briefing. -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: Colorido Criativo -->
+        <section id="colorful-creative" class="scroll-section h-screen flex items-center justify-center text-white relative" style="background-image: url('imagens/section4-background.svg'); background-size: cover; background-position: center;">
+            <canvas id="particle-canvas-section4" class="absolute top-0 left-0 w-full h-full z-0"></canvas>
+            <div class="text-center p-10 relative z-10">
+                <h2 class="text-8xl font-regular" style="font-family: 'Caprasimo', sans-serif;" data-aos="zoom-in">Colorido <br>& Criativo</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg" data-aos="zoom-in">Páginas coloridas, dinâmicas e inteligentes, pensadas para artistas, designers e criadores que querem cativar seu público.</p>
+                <a href="https://wa.me/5547996583052" class="mt-8 inline-block text-white font-bold py-3 px-8 rounded-[50px] border-2 border-white transition-all duration-300 hover:bg-[#474878] hover:border-[#474878] transform hover:scale-105" data-aos="zoom-in">Entre em contato</a>
+                <div class="mt-8 grid md:grid-cols-3 gap-8">
+                    <div class="rounded-lg p-6 text-white border border-gray-600 transition-transform duration-300 hover:scale-[1.1] w-[280px] h-[420px]" style="background-color: rgba(38, 38, 38, 0.5); backdrop-filter: blur(10px);">
+                        <img src="imagens/1.png" alt="Placeholder Image" class="rounded-t-lg mb-4 mx-auto" style="width: 180px;">
+                        <h3 class="text-lg font-bold mb-2">Impacto visual estratégico</h3>
+                        <p class="text-sm">Cada cor, forma e detalhe tem um propósito: atrair atenção, guiar o olhar e criar lembrança de marca.</p>
+                    </div>
+                    <div class="rounded-lg p-6 text-white border border-gray-600 transition-transform duration-300 hover:scale-[1.1] w-[280px] h-[420px]" style="background-color: rgba(38, 38, 38, 0.5); backdrop-filter: blur(10px);">
+                        <img src="imagens/2.png" alt="Placeholder Image" class="rounded-t-lg mb-4 mx-auto" style="width: 180px;">
+                        <h3 class="text-lg font-bold mb-2">Layout Fora da Caixa</h3>
+                        <p class="text-sm">Formas ousadas e movimentos sutis transformam a navegação em experiência, sem perder organização e funcionalidade.</p>
+                    </div>
+                    <div class="rounded-lg p-6 text-white border border-gray-600 transition-transform duration-300 hover:scale-[1.1] w-[280px] h-[420px]" style="background-color: rgba(38, 38, 38, 0.5); backdrop-filter: blur(10px);">
+                        <img src="imagens/3.png" alt="Placeholder Image" class="rounded-t-lg mb-4 mx-auto" style="width: 180px;">
+                        <h3 class="text-lg font-bold mb-2">Comunicação que conecta</h3>
+                        <p class="text-sm">Mensagens claras, envolventes e memoráveis. Sua marca conversa com o público de maneira natural, mas inesquecível.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 5: Corporativo Elegante -->
+        <section id="corporate-elegant" class="scroll-section h-screen flex flex-col bg-[#F8F8F8] text-gray-800 font-sans relative overflow-hidden">
+            <div class="flex-grow flex">
+                <!-- Left Column -->
+                <div class="w-3/5 bg-[#F8F8F8] p-16 flex flex-col">
+                    <header class="flex items-center">
+                        <div class="w-3 h-3 bg-black rounded-full mr-2"></div>
+                        <span class="font-bold text-lg tracking-wider">SUA EMPRESA</span>
+                    </header>
+        
+                    <main class="flex-grow flex items-center">
+                         <div class="max-w-lg">
+                            <p class="text-lg text-gray-600 font-serif tracking-wider" data-aos="zoom-in-right">Olá, meu nome é...</p>
+                            <h1 class="text-5xl my-4" data-aos="zoom-in-right" data-aos-delay="100">
+                                <span class="font-extrabold text-black">PERFEITO</span>
+                                <span class="font-serif italic text-gray-700 text-6xl mx-2">Para apresentar</span>
+                                <span class="font-extrabold text-black">VOCÊ E SEU PROJETO</span>
+                            </h1>
+                            <p class="text-gray-600 font-serif text-lg" data-aos="zoom-in-right" data-aos-delay="200">
+                                Entregamos páginas digitais com confiança, clareza e resultados reais. Cada etapa é pensada para que seus clientes se sintam seguros e satisfeitos.
+                            </p>
+                            <a href="https://wa.me/5547996583052" class="mt-8 bg-black text-white font-bold py-4 px-6 rounded-full inline-flex items-center group transition-transform duration-200 ease-in-out hover:scale-105" data-aos="zoom-in-up" data-aos-delay="200">
+                                Entre em Contato
+                                <span class="ml-4 w-8 h-8 bg-white text-black rounded-full flex items-center justify-center transition-transform group-hover:translate-x-1">
+                                    &#x2794;
+                                </span>
+                            </a>
+                        </div>
+                    </main>
+                </div>
+        
+                <!-- Right Column -->
+                <div class="w-2/5 bg-white p-16 flex flex-col">
+                    <header class="w-full flex justify-end">
+                        <button class="bg-black text-white font-bold py-3 px-8 rounded-full flex items-center" data-aos="zoom-in-left">
+                            <span class="mr-2">MENU</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        </button>
+                    </header>
+                    <main class="flex-grow flex items-center justify-end">
+                        <div class="text-right">
+                            <div class="mb-8" data-aos="zoom-in-left">
+                                <p class="text-5xl font-bold text-black">15+</p>
+                                <p class="text-gray-500">Anos de experiência</p>
+                            </div>
+                            <div class="mb-8" data-aos="zoom-in-left" data-aos-delay="100">
+                                <p class="text-5xl font-bold text-black">310+</p>
+                                <p class="text-gray-500">Projetos entregues</p>
+                            </div>
+                            <div class="mb-8" data-aos="zoom-in-left" data-aos-delay="150">
+                                <p class="text-5xl font-bold text-black">≈99%</p>
+                                <p class="text-gray-500">Satisfação de cliente</p>
+                            </div>
+                            <div data-aos="zoom-in-left" data-aos-delay="200">
+                                <p class="text-5xl font-bold text-black">50</p>
+                                <p class="text-gray-500">Clientes em todo o mundo</p>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        
+            <!-- Overlapping Image -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-0 z-10" data-aos="zoom-in-down">
+                 <img src="imagens/section5-model.jpg" alt="Designer Solt" class="w-96 h-[700px] object-cover rounded-bl-[80px] rounded-br-[80px]">
+            </div>
+        
+            <!-- Bottom Services Section -->
+             <footer class="absolute bottom-0 left-0 right-0 bg-white p-10 border-t border-gray-200">
+                <div class="grid grid-cols-4 gap-8 max-w-7xl mx-auto">
+                    <div>
+                        <h4 class="font-bold tracking-widest text-sm">Precisão no que importa</h4>
+                        <p class="text-gray-600 mt-2 text-sm">Entregamos o que o cliente precisa, sem desperdício de tempo.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold tracking-widest text-sm">Estratégia inteligente</h4>
+                        <p class="text-gray-600 mt-2 text-sm">Cada detalhe é pensado para gerar resultados reais.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold tracking-widest text-sm">Compromisso com prazos</h4>
+                        <p class="text-gray-600 mt-2 text-sm">Pontualidade não é diferencial. É obrigação cumprida, sempre.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold tracking-widest text-sm">Postura profissional</h4>
+                        <p class="text-gray-600 mt-2 text-sm">Atendimento direto, educado e transparente em todas as etapas.</p>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <!-- Seção 6: Produto/App Mobile -->
+        <section id="mobile-app" class="scroll-section min-h-screen bg-white text-gray-800 font-sans relative py-10 px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <header class="max-w-7xl mx-auto flex justify-between items-center py-4 relative">
+                <div class="text-2xl font-bold">
+                    <span class="text-black">Sua </span><span class="text-violet-600">Empresa</span>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8 text-gray-600 absolute left-1/2 -translate-x-1/2">
+                    <a href="#" class="hover:text-violet-600">Serviços</a>
+                    <a href="#" class="hover:text-violet-600">Como funciona</a>
+                    <a href="#" class="hover:text-violet-600">Sobre nós</a>
+                    <a href="#" class="hover:text-violet-600">Agentes</a>
+                    <a href="#" class="hover:text-violet-600">Projetos</a>
+                    <a href="#" class="hover:text-violet-600">Afiliados</a>
+                </nav>
+                <div>
+                    <svg class="w-8 h-8 text-violet-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                </div>
+            </header>
+        
+            <!-- Main Content -->
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-16 mt-16">
+                <!-- Left Text Content -->
+                <div>
+                    <h1 class="text-6xl font-extrabold leading-tight" data-aos="zoom-in-right">
+                        Apresente seu app<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">de forma marcante.</span>
+                    </h1>
+                    <p class="mt-4 text-gray-500 text-lg max-w-md" data-aos="zoom-in-right" data-aos-delay="100">
+                        Mostre funcionalidades, diferenciais e conduza o usuário direto ao download.
+                    </p>
+                    <a href="https://wa.me/5547996583052" class="mt-8 bg-pink-500 text-white font-bold py-4 px-6 rounded-full shadow-lg hover:bg-pink-600 transition-all inline-flex items-center transform hover:scale-105" data-aos="zoom-in-up">
+                        Entre em contato <span class="ml-2">&#x2794;</span>
+                    </a>
+                    <!-- Bottom Info Section -->
+                    <div class="mt-12 p-4 rounded-2xl bg-gradient-to-r from-purple-600 to-indigo-700 text-white relative overflow-hidden" data-aos="zoom-in-up">
+                        <div class="absolute -top-8 -left-8 w-24 h-24 bg-white/10 rounded-full"></div>
+                        <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-white/10 rounded-full"></div>
+                        <div class="grid grid-cols-3 gap-4 relative">
+                            <!-- Custom Workflow -->
+                            <div class="z-10">
+                                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mb-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                </div>
+                                <h3 class="text-base font-bold">Interface que conquista</h3>
+                                <p class="mt-1 text-xs text-purple-200">Layout pensado para destacar cada detalhe do seu app e gerar impacto visual.</p>
+                            </div>
+                            <!-- Multi-team projects -->
+                            <div class="z-10">
+                                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mb-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                </div>
+                                <h3 class="text-base font-bold">Foco total na conversão</h3>
+                                <p class="mt-1 text-xs text-purple-200">Cada elemento guia o usuário de forma clara e direta para a ação desejada.</p>
+                            </div>
+                            <!-- Downloads -->
+                            <div class="z-10">
+                                <h3 class="text-base font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-300">5M+ Downloads 👏</h3>
+                                <div class="flex items-center mt-2">
+                                    <div class="flex -space-x-2">
+                                        <img class="w-8 h-8 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/68.jpg" alt="User 1">
+                                        <img class="w-8 h-8 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 2">
+                                        <img class="w-8 h-8 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Right Image Content -->
+                <div class="relative flex items-center justify-center">
+                    <div class="phone-frame" data-aos="zoom-in-left">
+                        <div class="phone-side-buttons">
+                            <div class="button"></div>
+                            <div class="button"></div>
+                        </div>
+                        <div class="phone-screen">
+                            <div class="top-bezel">
+                                <div class="camera"></div>
+                            </div>
+                            <div class="phone-content">
+                                <div class="content-wrapper">
+                                    <div class="p-4">
+                                        <div class="flex justify-between items-center mb-4">
+                                            <h2 class="text-lg font-semibold">Olá, usuário! 👋</h2>
+                                        </div>
+                                        <div class="bg-purple-600 text-white p-4 rounded-xl mb-4">
+                                            <h3 class="font-bold">Arrasar com uma nova página</h3>
+                                            <button class="bg-purple-300 text-purple-800 text-sm font-bold py-1 px-3 rounded-full mt-2">Começar</button>
+                                            <p class="text-xs mt-2 text-purple-200">Jun 17</p>
+                                        </div>
+                                        <div class="space-y-3">
+                                            <div class="bg-gray-100 p-3 rounded-lg flex justify-between items-center"><span>Estudar para o concurso</span> <span class="text-red-500 text-sm">85%</span></div>
+                                            <div class="bg-gray-100 p-3 rounded-lg flex justify-between items-center"><span>Arrumar o quarto</span> <span class="text-red-500 text-sm">72%</span></div>
+                                            <div class="bg-gray-100 p-3 rounded-lg flex justify-between items-center"><span>Finalizar projeto</span> <span class="text-red-500 text-sm">60%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="navigation-bar">
+                                    <!-- SVG Icons for bottom nav -->
+                                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                    <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">+</div>
+                                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm14 1a1 1 0 11-2 0 1 1 0 012 0zM5 7a1 1 0 000 2h8a1 1 0 100-2H5z"></path></svg>
+                                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Floating Cards -->
+                    <div class="floating-card-1 bg-white p-4 rounded-xl shadow-xl" data-aos="zoom-in-left" data-aos-delay="200">
+                        <h4 class="font-bold mb-2">Curtiu esse estilo?</h4>
+                        <p class="text-sm text-gray-500 max-w-xs">Feita pra gerar desejo, engajamento e conversões — tudo no primeiro scroll.</p>
+                    </div>
+                    <div class="floating-card-2 bg-white p-4 rounded-xl shadow-xl" data-aos="zoom-in-left" data-aos-delay="300">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-bold">Destaque Visual</h4>
+                            <button class="bg-gray-200 text-gray-700 text-xs font-bold py-1 px-2 rounded-md">App Mobile</button>
+                        </div>
+                        <p class="text-sm text-gray-500">Coloque seu app no centro das atenções.</p>
+                        <p class="text-sm text-gray-500 mt-1">Sua marca, seu estilo, seu impacto.</p>
+                        <p class="text-sm text-gray-500 mt-1">Conquiste usuários desde o primeiro clique.</p>
+                    </div>
+            </div>
+        
+            
+        </section>
+
+        <!-- Seção 7: Nova Seção -->
+        <section id="new-section" class="scroll-section h-screen relative flex flex-col items-center justify-center text-white" style="background-image: url('imagens/section7-background.jpg'); background-size: cover; background-position: center;">
+            <canvas id="insect-particle-canvas"></canvas>
+            <header class="absolute top-0 left-0 w-full flex items-center justify-between p-8 z-20">
+                <div class="text-2xl font-bold">Sua empresa</div>
+                <nav class="hidden md:flex items-center gap-8 text-sm">
+                    <a href="#" class="hover:text-gray-300">Sobre Nós</a>
+                    <a href="#" class="hover:text-gray-300">Projetos</a>
+                    <a href="#" class="hover:text-gray-300">Parceiros</a>
+                    <a href="#" class="hover:text-gray-300">Serviços</a>
+                </nav>
+                <a href="https://wa.me/5547996583052" class="inline-block text-white font-bold py-3 px-8 rounded-[50px] border-2 border-white transition-all duration-300 hover:bg-[#474878] hover:border-[#474878] transform hover:scale-105">Entre em contato</a>
+            </header>
+            <div class="text-center -mt-24" data-aos="zoom-in-down">
+                <h1 class="text-6xl font-bold" style="color: #fff8dc; text-shadow: 0 0 20px rgba(255, 215, 0, 0.5), 0 0 5px rgba(255, 255, 255, 0.8);">Um estilo imersivo e dinâmico<br>para seu negócio.</h1>
+            </div>
+            <div class="mt-24 grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <div class="tilt-card bg-transparent border border-gray-700 rounded-lg p-6 text-white" style="backdrop-filter: blur(10px);" data-aos="zoom-in-up">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3 class="text-lg font-bold">Fluidez</h3>
+                    </div>
+                    <p class="text-sm text-center">Tudo aparece na hora certa: textos que deslizam, imagens que emergem com suavidade e transições que mantêm o usuário preso à navegação. Nada é estático — tudo responde ao seu ritmo.</p>
+                </div>
+                <div class="tilt-card bg-transparent border border-gray-700 rounded-lg p-6 text-white" style="backdrop-filter: blur(10px);" data-aos="zoom-in-up">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3 class="text-lg font-bold">Movimento</h3>
+                    </div>
+                    <p class="text-sm text-center">Cada detalhe tem propósito. Os elementos se mexem, reagem e acompanham o olhar, criando uma experiência quase cinematográfica, onde o conteúdo se revela conforme o usuário explora.</p>
+                </div>
+                <div class="tilt-card bg-transparent border border-gray-700 rounded-lg p-6 text-white" style="backdrop-filter: blur(10px);" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3 class="text-lg font-bold">Envolvimento</h3>
+                    </div>
+                    <p class="text-sm text-center">Essa não é só uma página bonita — é uma página que conversa. Ela guia, provoca curiosidade e cria uma conexão real com quem está navegando. O usuário não só vê: ele sente.</p>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-7xl">
+                <div class="bg-transparent border border-gray-700 rounded-t-[50px] p-8 text-white w-full" style="backdrop-filter: blur(10px);" data-aos="zoom-in-up">
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <!-- Card 1 -->
+                        <div class="tilt-card-inner bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg p-4 flex flex-col justify-between h-full">
+                            <div>
+                                <div class="flex justify-between items-start">
+                                    <p class="text-sm font-bold">Impacto real</p>
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                                </div>
+                                <p class="text-xs mt-4">Cada solução é pensada para gerar resultados concretos.</p>
+                            </div>
+                            <button class="mt-4 border border-white text-white py-1 px-3 rounded-full text-xs transition-all hover:bg-white hover:text-gray-900 self-center">Saiba Mais</button>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="tilt-card-inner bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg p-4 flex flex-col justify-between h-full">
+                            <div>
+                                <div class="flex justify-between items-start">
+                                    <p class="text-sm font-bold">Inteligência visual</p>
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                </div>
+                                <p class="text-xs mt-4">Estratégia de design que transforma visual em ação.</p>
+                            </div>
+                            <button class="mt-4 border border-white text-white py-1 px-3 rounded-full text-xs transition-all hover:bg-white hover:text-gray-900 self-center">Saiba Mais</button>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="tilt-card-inner bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg p-4 flex flex-col justify-between h-full">
+                            <div>
+                                <div class="flex justify-between items-start">
+                                    <p class="text-sm font-bold">Experiência que conecta</p>
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <p class="text-xs mt-4">Sua página guia e cativa, de forma natural e memorável.</p>
+                            </div>
+                            <button class="mt-4 border border-white text-white py-1 px-3 rounded-full text-xs transition-all hover:bg-white hover:text-gray-900 self-center">Saiba Mais</button>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="tilt-card-inner bg-gray-800 bg-opacity-50 border border-gray-600 rounded-lg p-4 flex flex-col justify-between h-full">
+                            <div>
+                                <div class="flex justify-between items-start">
+                                    <p class="text-sm font-bold">Profissionalismo garantido</p>
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.618 5.982A2.25 2.25 0 0121 7.5v9a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 16.5v-9a2.25 2.25 0 01.382-1.518l1.964-4.418A2.25 2.25 0 017.5 1.5h9a2.25 2.25 0 012.154 1.564l1.964 4.418z"></path></svg>
+                                </div>
+                                <p class="text-xs mt-4">Atendimento direto, transparente e sempre focado no resultado.</p>
+                            </div>
+                            <button class="mt-4 border border-white text-white py-1 px-3 rounded-full text-xs transition-all hover:bg-white hover:text-gray-900 self-center">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Final: CTA -->
+        <section id="final-cta" class="scroll-section h-screen flex flex-col items-center justify-center bg-white text-gray-900">
+            <div class="text-center">
+                <img src="imagens/logotipo_noduspace.png" alt="Noduspace Logo" class="h-16 mx-auto animate-pulse" data-aos="fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mt-6" data-aos="zoom-in">Vamos criar a sua página?</h2>
+                <p class="text-lg mt-4" data-aos="zoom-in" data-aos-delay="200">Transforme sua visão em realidade com a Noduspace.</p>
+                <a href="https://wa.me/5547996583052" class="mt-10 inline-block text-black font-bold py-3 px-8 rounded-[50px] border-2 border-black transition-all duration-300 hover:bg-black hover:text-white transform hover:scale-105">Entre em Contato</a>
+            </div>
+        </section>
+    </div>
+
+    
+        <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="tilt-effect.js"></script>
+</body>
+</html>
