@@ -6,11 +6,7 @@
 }
 
 html, body {
-    overflow: hidden;
-}
-
-html, body {
-    overflow: hidden;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 html {
@@ -28,7 +24,8 @@ html {
     flex-shrink: 0;
     width: 100%;
     height: 100vh;
-    position: relative; /* Necessário para o z-index do vídeo */
+    position: relative;
+    overflow: hidden; /* Hide overflowing content on desktop */
 }
 
 #insect-particle-canvas {
@@ -51,174 +48,158 @@ html {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    /* Disable scroll snapping and allow normal scroll */
+
+@media (max-width: 1024px) {
+    /* Allow normal scrolling */
     html, body {
-        overflow: auto;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
     }
 
     .scroll-container {
         scroll-snap-type: none;
-        overflow-y: auto;
+        overflow-y: visible;
         height: auto;
     }
 
     .scroll-section {
-        height: auto; /* Let sections grow with content */
-        min-height: 100vh; /* Keep them at least viewport height */
-        padding-top: 80px; /* Add padding for header */
-        padding-bottom: 80px;
-        scroll-snap-align: none;
+        height: auto !important;
+        min-height: fit-content;
+        padding: 80px 40px;
+        overflow: visible; /* Show all content */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    /* Adjust hero section padding for mobile */
-    #hero {
-        padding: 40px 20px;
+    #hero, #final-cta {
+        height: 100vh !important;
     }
 
-    /* Hero Section */
-    #hero .z-10 img {
-        height: 6rem; /* 96px */
+    h1, .text-8xl, .text-7xl, .text-6xl {
+        font-size: 2.8rem !important;
+    }
+    h2, .text-5xl {
+        font-size: 2.2rem !important;
+    }
+    h3, .text-4xl {
+        font-size: 1.8rem !important;
     }
 
-    #hero .z-10 p {
-        font-size: 1rem; /* 16px */
+    header.absolute {
+        position: relative;
+        flex-direction: column;
+        gap: 1rem;
     }
 
-    /* Section 2: Clean & Minimalista */
-    #clean-minimalist .flex-grow.flex {
+    /* Section 2 */
+    #clean-minimalist .flex-grow.flex { flex-direction: column; text-align: center; }
+    #clean-minimalist .w-1\/2 { width: 100%; }
+    #clean-minimalist .bg-contain { height: 300px; background-position: center; margin-top: 2rem; }
+    #clean-minimalist .rounded-t-3xl { margin-top: 0; }
+    #clean-minimalist .justify-around { flex-wrap: wrap; gap: 20px; }
+    #clean-minimalist .grid { grid-template-columns: 1fr; }
+
+    /* Section 3 */
+    #dark-tech .grid { grid-template-columns: 1fr; text-align: center; }
+    #dark-tech .text-left { text-align: center; }
+
+    /* Section 4 */
+    #colorful-creative .grid { grid-template-columns: 1fr; justify-items: center; }
+    #colorful-creative .grid > div { width: 100%; max-width: 320px; height: auto; }
+    #colorful-creative .description-wrapper {
+        background-color: rgba(38, 38, 38, 0.5);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border like the glass-effect class */
+        margin-top: 2rem;
+    }
+
+    /* Section 5 */
+    #corporate-elegant {
+        overflow: visible;
+    }
+    #corporate-elegant > .flex-grow.flex {
         flex-direction: column;
     }
-
-    #clean-minimalist .flex-grow.flex > div {
-        width: 100%;
-    }
-
-    #clean-minimalist .h-full.bg-contain {
-        height: 300px; /* Give the image a fixed height on mobile */
-        background-position: center;
-    }
-
-    #clean-minimalist h2 {
-        font-size: 2.5rem; /* 40px */
-    }
-
-    /* Section 3: Dark Tech */
-    #dark-tech h2 {
-        font-size: 2.5rem; /* 40px */
-    }
-
-    #dark-tech h3 {
-        font-size: 2rem; /* 32px */
-    }
-
-    /* Section 4: Colorido Criativo */
-    #colorful-creative h2 {
-        font-size: 3rem; /* 48px */
-    }
-
-    #colorful-creative .grid {
-        justify-items: center;
-    }
-
-    #colorful-creative .grid > div {
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-    }
-
-    /* Section 5: Corporativo Elegante */
-    #corporate-elegant .flex-grow.flex {
-        flex-direction: column;
-    }
-
-    #corporate-elegant .flex-grow.flex > div {
+    #corporate-elegant .w-3\/5, #corporate-elegant .w-2\/5 {
         width: 100%;
         padding: 40px 20px;
-        position: relative;
     }
-
-    #corporate-elegant .flex-grow.flex > div:first-child {
-        z-index: 10;
+    #corporate-elegant .w-2\/5 header {
+        margin-bottom: 2rem;
     }
-
-    #corporate-elegant .absolute.left-1/2 {
-        position: relative;
-        left: auto;
-        transform: none;
-        top: auto;
-        margin-top: 0;
-        margin-bottom: 0;
+    #corporate-elegant .absolute.left-1\/2 {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
         z-index: 5;
-    }
-
-    #corporate-elegant .w-96 {
+        order: -1;
         width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
     }
-
+    #corporate-elegant .w-96 { width: 100%; }
     #corporate-elegant .h-\[700px\] {
         height: auto;
-        max-height: 400px;
-        border-radius: 0;
+        max-height: 450px;
+        border-radius: 40px;
+        object-fit: cover;
     }
-
-    #corporate-elegant footer {
+    #corporate-elegant footer.absolute {
         position: relative;
-        bottom: auto;
+        padding: 40px 20px;
+    }
+    #corporate-elegant footer .grid { grid-template-columns: 1fr; gap: 20px; }
+    #corporate-elegant .w-2\/5.bg-white > main { margin-bottom: 20px; }
+
+    /* Section 6 */
+    #mobile-app .grid { grid-template-columns: 1fr; text-align: center; }
+    #mobile-app .phone-frame { margin-top: 40px; transform: scale(0.95); }
+    #mobile-app .floating-card-1, #mobile-app .floating-card-2 {
+        position: relative;
+        transform: none;
         left: auto;
-        right: auto;
-    }
-
-    #corporate-elegant footer .grid {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        gap: 20px;
-    }
-
-    #corporate-elegant h1 {
-        font-size: 2.5rem;
-    }
-
-    #corporate-elegant .w-2\/5.bg-white > main {
-        margin-bottom: 40px;
-    }
-
-    /* Section 6: Produto/App Mobile */
-    #mobile-app h1 {
-        font-size: 2.5rem;
-    }
-
-    #mobile-app .relative .absolute {
-        position: relative;
-        right: auto;
         top: auto;
-        margin-top: 20px;
-        width: 100%;
+        margin: 20px auto;
+        width: 90%;
+        z-index: auto;
     }
 
-    /* Section 7: Nova Seção */
-    #new-section h1 {
-        font-size: 2.5rem;
-    }
-
-    #new-section .text-center.-mt-24 {
-        margin-top: 40px;
-    }
-
+    /* Section 7 */
+    #new-section .grid { grid-template-columns: 1fr; }
     #new-section .absolute.bottom-0 {
         position: relative;
-        bottom: auto;
-        left: auto;
-        transform: none;
         margin-top: 40px;
     }
-
-    /* Final CTA Section */
-    #final-cta h2 {
-        font-size: 2.5rem; /* 40px */
-    }
+    #new-section .text-center.-mt-24 { margin-top: 0; }
 }
 
 
+@media (max-width: 768px) {
+    .scroll-section {
+        padding: 60px 20px;
+    }
+
+    h1, .text-8xl, .text-7xl, .text-6xl {
+        font-size: 2.2rem !important;
+    }
+    h2, .text-5xl {
+        font-size: 1.8rem !important;
+    }
+    h3, .text-4xl {
+        font-size: 1.5rem !important;
+    }
+
+    header .hidden.md\:flex {
+        display: none;
+    }
+    
+    #clean-minimalist .bg-contain { height: 250px; }
+    #corporate-elegant .h-\[700px\] { max-height: 400px; }
+    .phone-frame { transform: scale(0.9); }
+}
 
 
 /* Estilos para o efeito de vidro fosco */
@@ -350,4 +331,146 @@ html {
     transform: translateX(10%);
     z-index: 25;
     width: 300px;
+}
+
+
+/* Estilos para o canvas de partículas */
+#particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#particle-canvas-section4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Estilos para o efeito de tilt */
+.tilt-card {
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.tilt-card:hover {
+    transform: translateZ(20px);
+}
+
+.tilt-card-inner {
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.tilt-card-inner:hover {
+    transform: translateZ(10px);
+}
+
+/* Estilos para o efeito de scroll suave */
+.smooth-scroll-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.smooth-scroll-content {
+    will-change: transform;
+}
+
+/* Estilos para o efeito de texto gradiente */
+.gradient-text {
+    background: linear-gradient(to right, #8A2BE2, #DA70D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Estilos para o efeito de brilho */
+.glow-effect {
+    box-shadow: 0 0 20px rgba(200, 150, 255, 0.5);
+}
+
+/* Estilos para o efeito de borda neon */
+.neon-border {
+    border: 3px solid transparent;
+    background-image: linear-gradient(to bottom right, #8A2BE2, #DA70D6);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.8), inset 0 0 20px rgba(218, 112, 214, 0.5);
+}
+
+/* Estilos para o efeito de partículas de insetos */
+#insect-particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Estilos para o efeito de texto com sombra */
+.text-shadow-glow {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Estilos para o efeito de fundo com gradiente */
+.background-gradient {
+    background: radial-gradient(circle at center, rgba(100, 0, 200, 0.1) 0%, transparent 50%), linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(20, 0, 40, 0.8) 100%);
+}
+
+/* Estilos para o efeito de brilho de fundo */
+.background-glow {
+    box-shadow: inset 0 0 100px rgba(100, 0, 200, 0.3);
+}
+
+/* Estilos para o efeito de brilho de texto lilás */
+.lilac-glow {
+    background: radial-gradient(circle at center, rgba(200, 150, 255, 0.1) 0%, transparent 70%);
+}
+
+/* Estilos para o efeito de sombra de tag */
+.tag-shadow {
+    box-shadow: 0 0 10px rgba(200, 150, 255, 0.5);
+}
+
+/* Estilos para o efeito de sombra de tag forte */
+.strong-tag-shadow {
+    box-shadow: 0 0 8px rgba(200, 150, 255, 0.3);
+}
+
+/* Estilos para o efeito de texto com sombra roxa */
+.purple-text-shadow {
+    text-shadow: 0 0 10px rgba(200, 150, 255, 0.8);
+}
+
+/* Estilos para o efeito de sombra de imagem */
+.image-shadow {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para o efeito de texto com sombra dourada */
+.gold-text-shadow {
+    color: #fff8dc;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5), 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos para o efeito de cartão com desfoque */
+.blur-card {
+    backdrop-filter: blur(10px);
+}
+
+/* Estilos para a seção 4 */
+#colorful-creative .description-wrapper {
+    background: transparent;
+    border-radius: 0.5rem; /* 8px */
+    transition: background-color 0.3s ease;
 }
